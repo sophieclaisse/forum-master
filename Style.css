@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+    color: lightseagreen;
+}
+
+
+
+#txt{
+    height: 50vh;
+    width: 60vw;
+    margin-left: 5vw;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+}
+
+#input{
+    height: 4vh;
+    width: 15vw;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+
+}
+
+#nom{
+
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+#bouton{
+    height: 4vh;
+    width: 10vw;
+    margin-left: 55vw;
+    margin-top: 3vh;
+    background-color:lightseagreen ;
+    color: white;
+    border-radius: 10px;
+}
+
+#comm{
+    width: 60vw;
+    margin-top: 5vh;
+    margin-left: 21vw;
+    padding: 3VH;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+}
