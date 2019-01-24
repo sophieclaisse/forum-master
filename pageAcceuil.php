@@ -18,6 +18,10 @@ include "index.php";
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+<div id="login">
+    <a href="admin.php">Administrateur</a>
+</div>
+
 
 <h1>Bienvenue sur le forum</h1>
 
