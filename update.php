@@ -23,14 +23,9 @@ $selection=$sel->fetch_assoc();
 
 function changerData ($id)
 {
-    /*if (isset($_POST['pseudo'])){
-        $pseudo= $_POST['pseudo'];}
 
-    if (isset($_POST['date'])){
-        $date= $_POST['date'];}*/
-
-    if (isset($_POST['commentaire'])){
-        $commentaire= $_POST['commentaire'];}
+    if (isset($_POST['newComment'])){
+        $commentaire= $_POST['newComment'];}
 
 
     global $conn;
@@ -39,7 +34,7 @@ function changerData ($id)
 
     $aJour= "UPDATE forum set  
           
-              `commentaire`='$commentaire', 
+              `commentaire`='$commentaire' 
                
               where id = $id";
 
@@ -54,7 +49,7 @@ function changerData ($id)
 //if (isset ($_POST['name'])){
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    if (isset ($_POST['commentaire']))  {
+    if (isset ($_POST['newComment']))  {
 
         changerData($id);
         header("Location: admin.php");
@@ -79,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div id="nom">
         <?php echo $selection['pseudo']. " - le: ". $selection['date']."<br>"; ?>
     </div>
-    <textarea name="commentaire" id="txt" >
+    <textarea name="newComment" id="txt" >
         <?php echo $selection['commentaire']; ?>
     </textarea>
 
