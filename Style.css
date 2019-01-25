@@ -7,17 +7,22 @@ body{
 #log{
     background-color:lightseagreen ;
     color: white;
+    font-size: 3em;
     padding-top: 7vh;
     padding-bottom: 7vh;
     height: 15vh;
+    border-radius: 10px;
 }
 
 
 #logIn{
     background-color: lightseagreen;
     color: white;
-    font-size: 3em;
+    font-size: 2em;
     border-radius: 10px;
+    display: flex;
+    justify-content: start;
+
 }
 
 #txt{

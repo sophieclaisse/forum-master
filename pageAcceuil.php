@@ -22,7 +22,8 @@ include "index.php";
 
 
 <div id="logIn">
-    <a href="Login.php">LOGIN</a>
+    <span>SIGN IN</span>
+    <a href="Login.php"><img src="sign-in-white.png" height="50px"</a>
 </div>
 
 
@@ -42,17 +43,12 @@ include "index.php";
 
 <div id="comm">
 
-
-
-
 </div>
 
 
 
 
 <script src="AjaxRequest.js"></script>
-
-
 
 </body>
 </html>

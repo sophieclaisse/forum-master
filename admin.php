@@ -23,7 +23,7 @@ session_start();
 
 <div id="log">
     <?php echo "Bienvenue ".$_SESSION['nom']. " ! <BR>"; ?>
-    <a href="pageAcceuil.php">Retour à la page d'acceuil</a>
+    <a href="Logout.php"><img src="sign-out-white.png" height="50px"></a>
 </div>
 
 
