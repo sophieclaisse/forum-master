@@ -7,6 +7,8 @@
  */
 
 include "index.php";
+session_start();
+
 ?>
 
 
@@ -20,6 +22,7 @@ include "index.php";
 <body>
 
 <div id="log">
+    <?php echo "Bienvenue ".$_SESSION['nom']. " ! <BR>"; ?>
     <a href="pageAcceuil.php">Retour à la page d'acceuil</a>
 </div>
 
@@ -29,11 +32,9 @@ include "index.php";
 
 
 
-
-
-
-
 <?php
+
+
 $selection= "SELECT * FROM forum ORDER BY `date` DESC  ";
 
 $sel = $conn->query($selection);

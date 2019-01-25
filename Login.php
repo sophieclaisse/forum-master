@@ -10,14 +10,14 @@ include "index.php";
 
 session_start();
 
-//if(!empty($POST)){ //SI FORMULAIRE EST REMPLI ON RECUPERE LES POST
-$nom = $_POST['nom'];
-$password = $_POST['password'];
-$pass = sha1($password);
+//if(!empty($POST)) { //SI FORMULAIRE EST REMPLI ON RECUPERE LES POST
+    $nom = $_POST['nom'];
+    $password = $_POST['password'];
+    $pass = sha1($password);
 
-$selection = "SELECT * FROM administrateur  ";
-$sel = $conn->query($selection);
-$row = $sel->fetch_assoc();
+    $selection = "SELECT * FROM administrateur  ";
+    $sel = $conn->query($selection);
+    $row = $sel->fetch_assoc();
 
 
 
@@ -51,7 +51,7 @@ if (!empty($password) && !empty($nom)) { //SI PASS ET NOM RECUPERES ON VERIFIE
 
 
 <div id="log">
-    <a href="admin.php">Administrateur</a>
+
     <form action="" method="post">
         <label>Nom</label><input type="text" name="nom" class="inputLog"><br/>
         <label>Password</label><input type="text" name="password" class="inputLog"><br/>
