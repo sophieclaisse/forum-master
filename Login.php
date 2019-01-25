@@ -10,7 +10,7 @@ include "index.php";
 
 session_start();
 
-//if(!empty($POST)) { //SI FORMULAIRE EST REMPLI ON RECUPERE LES POST
+
     $nom = $_POST['nom'];
     $password = $_POST['password'];
     $pass = sha1($password);
@@ -51,14 +51,17 @@ if (!empty($password) && !empty($nom)) { //SI PASS ET NOM RECUPERES ON VERIFIE
 
 
 <div id="log">
+    <h1> LOG IN</h1>
+    <span>Veuillez vous identifier!</span>
+</div>
 
+<div id="enregistrement">
     <form action="" method="post">
         <label>Nom</label><input type="text" name="nom" class="inputLog"><br/>
         <label>Password</label><input type="text" name="password" class="inputLog"><br/>
         <button type="submit" name="boutonLog" id="boutonLog">OK</button><br/>
     </form>
 </div>
-
 
 </body>
 </html>
