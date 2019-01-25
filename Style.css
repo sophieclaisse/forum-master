@@ -8,8 +8,6 @@ body{
     background-color:lightseagreen ;
     color: white;
     font-size: 3em;
-    padding-top: 7vh;
-    padding-bottom: 7vh;
     height: 15vh;
     border-radius: 10px;
 }
@@ -90,13 +88,15 @@ body{
 #boutonLog {
     background-color: lightseagreen ;
     color: white;
+    width: 10vw;
+
 }
 
 #enregistrement{
     border: 2px solid lightseagreen;
     border-radius: 10px;
     width: 40vw;
-    margin-top: 30vh;
+    margin-top: 10vh;
     margin-left: 30vw;
     padding: 5vh;
 }

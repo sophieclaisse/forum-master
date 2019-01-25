@@ -23,7 +23,7 @@ include "index.php";
 
 <div id="logIn">
     <span>SIGN IN</span>
-    <a href="Login.php"><img src="sign-in-white.png" height="50px"</a>
+    <a href="Login.php"><img src="sign-in-white.png" height="50px"></a>
 </div>
 
 
