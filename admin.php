@@ -19,6 +19,11 @@ include "index.php";
 </head>
 <body>
 
+<div id="log">
+    <a href="pageAcceuil.php">Retour à la page d'acceuil</a>
+</div>
+
+
 
 <h1>Espace administrateur</h1>
 
@@ -43,3 +48,5 @@ while($row = $sel->fetch_assoc()) {?>
     <div id="titre"><?php echo $row['id']. " - ". $row['pseudo']. " - " . $row['date']. " :  <br> ".$row['commentaire']."<br><br>";} ?> </div>
 
 </div>
+
+

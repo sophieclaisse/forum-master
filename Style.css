@@ -3,10 +3,20 @@ body{
     color: lightseagreen;
 }
 
-#login{
+#log{
     background-color:lightseagreen ;
     color: white;
-    height: 5vh;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    height: 15vh;
+}
+
+
+#logIn{
+    background-color: lightseagreen;
+    color: white;
+    font-size: 3em;
+    border-radius: 10px;
 }
 
 #txt{
@@ -57,3 +67,9 @@ body{
 #titre {
     text-align: left;
 }
+
+.inputLog, #boutonLog{
+    margin-top:1vh;
+
+}
+
